@@ -69,7 +69,10 @@ int Taschenrechner::berechne()
        std::string second_num = m_eingabe.substr(index_div + 1, m_eingabe.npos);
        int first_int = std::stoi(first_num);
        int second_int = std::stoi(second_num);
-       if (second_int == 0) throw("Division by Zer0!!");
+       if (second_int == 0){
+           std::string e = "Division by Zer0!!";
+           throw e;
+       }
        int result = first_int / second_int;
        return result;
     }

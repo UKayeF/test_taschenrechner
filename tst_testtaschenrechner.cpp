@@ -107,7 +107,7 @@ void TestTaschenrechner::handle_division_by_zero()
     bool throws_exception = false;
     try {
         rechner.berechne();
-    }  catch (std::exception e) {
+    }  catch (std::string) {
         throws_exception = true;
     }
     QCOMPARE(throws_exception, true);
