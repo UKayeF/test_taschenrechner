@@ -11,6 +11,7 @@ public:
     Taschenrechner();
     void setEingabe(std::string eingabe);
     std::string getEingabe();
+    int berechne();
 };
 
 #endif // TASCHENRECHNER_HPP
